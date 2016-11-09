@@ -1,11 +1,17 @@
 $(function(){
 
-	var keepBgSize = $('#header, #breakImg');
+  var $w = $(window),
+  $background = $('#header, #breakImg');
 
+  // Fix background image jump on mobile
+  if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+    $background.css({'top': 'auto', 'bottom': 0});
 
-	function resizeBackground() {
-		keepBgSize.height($(window).height() + 60)
-	};
+    $w.resize(sizeBackground);
+    sizeBackground();
+  }
 
-	$(window).resize(resizeBackground);
+  function sizeBackground() {
+     $background.height(screen.height);
+  }
 })
