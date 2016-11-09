@@ -1,0 +1,146 @@
+
+nav {
+	font-family: 'Roboto', sans-serif;
+}
+
+#header {
+	position: relative;
+	overflow: hidden;
+	background:
+	  linear-gradient(
+      rgba(255, 182, 193, 0.45), 
+      rgba(255, 182, 193, 0.45)
+    ),
+	 url("../imgs/jump.jpg") no-repeat;
+	background-size: contain;
+	color: rgb(255, 192, 203);
+	height: 60%;
+	margin-top: -20px;
+
+}
+
+#joinButt {
+	text-align: center;
+	margin-top: -20px;
+	position: relative;
+	z-index: 100;
+}
+
+button#join {
+	background-color: rgb(255, 182, 193);
+	border: 2px solid white;
+	height: 60px;
+	width: 150px;
+	border-radius: 20px;
+	color: #A699B6;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2em;
+
+}
+
+#headerInside {
+	opacity: .8;
+	text-align: center;
+	font-size: 4em;
+	font-family: 'Amatic SC', cursive;
+}
+
+#headerTextTop {
+	margin-top: 40%;
+}
+
+#underHeader {
+	margin-top: 20px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.2em;
+	color: #61545C;
+}
+
+#mission, #underPug {
+	margin-top: 25px;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+#breakImg {
+	margin-top: 20px;
+	height:32%;
+	position: relative;
+	overflow: hidden;
+	background:
+	  linear-gradient(
+      rgba(255, 182, 193, 0.45), 
+      rgba(255, 182, 193, 0.45)
+    ),
+	 url("../imgs/moreladies.jpg") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+#pug {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 2em;
+}
+
+.seperate {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	height: 1.5px;
+	background-color: #888888;
+}
+
+#newsForm {
+	margin-top: 20px;
+}
+
+#newsForm>label {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#newsForm>ul>li {
+	display: inline-block;
+	margin: -3.8px;
+}
+
+#emailForm {
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+#emailSub {
+	border: 1.5px solid #CCCCCC;
+	background-color: rgb(255, 182, 193);
+	border-left-color: white;
+	color: #333333;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	height: 34px;
+	width: 120px;
+}
+
+#bottom {
+	margin-top: 15px;
+	background-color: #888888;
+}
+
+#footer {
+}
+
+#footer>ul {
+	list-style: none;
+	margin-left: 5%;
+}
+
+#footer>ul>li {
+	display: inline-block;
+	margin: 10px;
+}
+
+
+
