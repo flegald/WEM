@@ -101,9 +101,12 @@ button#join {
 	margin-bottom: 10px;
 }
 
+#newsForm>ul {
+	list-style: none;
+}
+
 #newsForm>ul>li {
-	display: inline-block;
-	margin: -3.8px;
+	margin: 10px;
 }
 
 #emailForm {
@@ -113,13 +116,13 @@ button#join {
 
 #emailSub {
 	border: 1.5px solid #CCCCCC;
+	margin-left: 25%;
 	background-color: rgb(255, 182, 193);
 	border-left-color: white;
 	color: #333333;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.2em;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
+	border-radius: 5px;
 	height: 34px;
 	width: 120px;
 }
@@ -129,17 +132,19 @@ button#join {
 	background-color: #888888;
 }
 
+
 #footer {
+	text-align: center;
 }
 
 #footer>ul {
 	list-style: none;
-	margin-left: 5%;
+	margin-left: -20px;
 }
 
 #footer>ul>li {
 	display: inline-block;
-	margin: 10px;
+	margin: 7px;
 }
 
 
