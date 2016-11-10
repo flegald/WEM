@@ -3,6 +3,8 @@ nav {
 	font-family: 'Roboto', sans-serif;
 }
 
+
+
 #header {
 	position: relative;
 	overflow: hidden;
@@ -88,17 +90,17 @@ button#join {
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
-	height: 1.5px;
-	background-color: #888888;
+	height: 1px;
+	background-color: #DDDDDD;
 }
 
 #newsForm {
 	margin-top: 20px;
+	text-align: center;
 }
 
 #newsForm>label {
-	margin-left: 10px;
-	margin-bottom: 10px;
+margin-bottom: 10px;
 }
 
 #newsForm>ul {
@@ -116,13 +118,12 @@ button#join {
 
 #emailSub {
 	border: 1.5px solid #CCCCCC;
-	margin-left: 25%;
 	background-color: rgb(255, 182, 193);
-	border-left-color: white;
 	color: #333333;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.2em;
 	border-radius: 5px;
+	padding-top: 5px;
 	height: 34px;
 	width: 120px;
 }
@@ -139,7 +140,6 @@ button#join {
 
 #footer>ul {
 	list-style: none;
-	margin-left: -20px;
 }
 
 #footer>ul>li {

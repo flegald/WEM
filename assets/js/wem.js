@@ -1,5 +1,7 @@
 $(function(){
 
+
+// Keep images aligned for mobile when url bar dissapears on scroll
   var $w = $(window)
   var $header = $('#header');
   var $breakImg = $('#breakImg');
@@ -23,4 +25,17 @@ $(function(){
   function sizeBackgroundBreakImg() {
      $breakImg.height(screen.height*.32);
   }
+
+  $('#infoScroll').click(function() {
+    $('html, body').animate({
+        scrollTop: $("#underHeader").offset().top
+    }, 500);
+  });
+
+  var $toContact = $('#join, #contactScroll');
+  $toContact.on('click', function(){
+  	$('html, body').animate({
+  		scrollTop: $('#bottom').offset().top
+  	}, 500);
+  })
 })
