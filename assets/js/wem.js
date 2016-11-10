@@ -12,6 +12,6 @@ $(function(){
   }
 
   function sizeBackground() {
-     $background.height(screen.height);
+     $background.height(screen.height*.6);
   }
 })
