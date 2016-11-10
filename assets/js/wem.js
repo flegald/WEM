@@ -16,17 +16,18 @@ $(function(){
 
     sizeBackgroundHeader();
     sizeBackgroundBreakImg();
-  }
+  };
 
   function sizeBackgroundHeader() {
      $header.height(screen.height*.6);
-  }
+  };
 
   function sizeBackgroundBreakImg() {
      $breakImg.height(screen.height*.32);
-  }
+  };
 
   $('#infoScroll').click(function() {
+  	$('#navbar-collapse').slideUp()
     $('html, body').animate({
         scrollTop: $("#underHeader").offset().top
     }, 500);
@@ -34,8 +35,10 @@ $(function(){
 
   var $toContact = $('#join, #contactScroll');
   $toContact.on('click', function(){
+  	$('#navbar-collapse').slideUp()
   	$('html, body').animate({
   		scrollTop: $('#bottom').offset().top
   	}, 500);
-  })
-})
+  });
+
+});
