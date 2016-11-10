@@ -1,17 +1,26 @@
 $(function(){
 
-  var $w = $(window),
-  $background = $('#header, #breakImg');
+  var $w = $(window)
+  var $header = $('#header');
+  var $breakImg = $('#breakImg');
 
   // Fix background image jump on mobile
   if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
-    $background.css({'top': 'auto', 'bottom': 0});
+    $header.css({'top': 'auto', 'bottom': 0});
+    $breakImg.css({'top': 'auto', 'bottom': 0});
 
-    $w.resize(sizeBackground);
-    sizeBackground();
+    $w.resize(sizeBackgroundHeader);
+    $w.resize(sizeBackgroundBreakImg);
+
+    sizeBackgroundHeader();
+    sizeBackgroundBreakImg();
   }
 
-  function sizeBackground() {
-     $background.height(screen.height*.6);
+  function sizeBackgroundHeader() {
+     $header.height(screen.height*.6);
+  }
+
+  function sizeBackgroundBreakImg() {
+     $breakImg.height(screen.height*.32);
   }
 })
